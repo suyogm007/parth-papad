@@ -1,0 +1,30 @@
+<br><div class="w3-green w3-round"><h1 class="w3-card w3-orange w3-round border border-dark">Contact us</h1>
+    <p><img src="/assets/parth5.jpg" class="img-fluid"></p></div><br>
+    <div>
+       <h1 class="badge badge-warning border border-dark">Vaishali Gruh Udyog</h1><br>
+      <p class="fa fa-home w3-card w3-round w3-orange border border-dark"></p> <p><mark class="w3-round">Gram-Loni (Pin-450 334),</mark></p>
+       <p><mark class="w3-round">Dist. -Burahanpur(MP).</mark></p>
+       <p class="fa fa-mobile w3-card w3-green w3-round border border-dark"></p><p><mark class="w3-round">Customer Care No.-  +91 7089014344</mark></p>
+       <p class="fa fa-envelope w3-card w3-red w3-round border border-dark"></p><p><mark class="w3-round">E-mail-  infovaishaligruhudyog@gmail.com</mark></p>
+    </div>
+        <br><br><hr>
+        <div class="feedback">
+        <h2 class="w-auto badge badge-warning border border-dark container-fluid">Feedback Here</h2><br>
+       <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit(feedbackForm)"> 
+      <label>
+         Name: <input type="text" formControlName="name">
+         <div *ngIf="feedbackForm.controls.name.errors && isSubmitted"> Please Enter Valid name</div>
+       </label><br><br>
+       <label>
+         Contact: <input type="text" formControlName="contact">
+       </label><br><br>
+       <label>
+         E-mail: <input type="text" formControlName="email">
+       </label><br><br>
+       <label>
+            Feedback: <input type="text" style="height: 200px; width: 500px; " formControlName="feedback">
+          </label><br><br>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form> 
+      </div>
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1920887.0970640583!2d73.42423982517849!3d19.89350954327752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bd834a926101917%3A0x851b8ad287b66292!2sParth%20papad%2C%20loni%2C%20GRAM-%20LONI%20(PIN-450-334%2C%20Maharashtra%20State%20Highway%204%2C%20Bahadarpur%2C%20Madhya%20Pradesh%20450331!3m2!1d21.2893631!2d76.1733613!5e0!3m2!1sen!2sin!4v1584851726559!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>

@@ -1,0 +1,59 @@
+.dropbtn {
+    
+    color: white;
+  
+    font-size: 20px;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display:contents;
+
+  }
+  
+  .dropdown-content {
+    display:none;
+    position:relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px white;
+    
+  }
+  
+  .dropdown-content a {
+    background-color:  black;
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 8px 16px 0px white;
+    
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {
+      display:contents;
+      
+      
+    }
+  
+  .dropdown:hover  {
+     color:white;
+      
+    }
+#logo{
+    box-shadow: 0px 8px 16px 5px black;
+  
+}
+
+table {
+  width: 100%;
+}
+
+
+
+
+
+
+
+

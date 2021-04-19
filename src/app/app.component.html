@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  </style>
+  
+   
+    
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+      <a routerLink="javascript:void(0)" (click)="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 id="company" class="w3-padding-32 "><b>Parth<br>Papad</b></h3>
+      </div>
+      <div class="w3-block">
+          <div class="dropdown">
+              <i id="icon" class="fa fa-arrow-circle-right"></i>               
+              <label class="dropbtn"><p class="w3-bar-item w3-hover-white w3-card btn btn-default border border-dark" style="color: white;">Products</p></label><hr>
+              <ul class="dropdown-content" style="list-style: none;">  
+                <li><a routerLink="/chana" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Chana Papad</p></a></li> 
+                <li><a routerLink="/moong" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Moong Papad</p></a></li> 
+                <li><a routerLink="/lasun" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Lasun Papad</p></a></li> 
+                <li><a routerLink="/katran" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Kataran Papad</p></a></li>
+                <li><a routerLink="/methi" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Methi Papad</p></a></li> 
+                <li><a routerLink="/punjabim" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Punjabi-M Papad</p></a></li> 
+                <li><a routerLink="/rajwadi" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Rajwadi Papad</p></a></li> 
+                <li><a routerLink="/singlemari" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Singlemari Papad</p></a></li> 
+                <li><a routerLink="/jeeram" (click)="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round w3-orange"><p class="w3-card progress-bar progress-bar-striped progress-bar-animated w3-orange">Jeera-M Papad</p></a></li>  
+                </ul>
+          </div>
+      </div>
+      <i id="icon" class="fa fa-home"></i>    
+      <a routerLink="/home" (click)="w3_close()" class="w3-bar-item  w3-hover-white w3-card btn btn-default border border-dark" style="color: white;">Home</a><hr>
+      <i id="icon"  class="fa fa-address-book"></i>    
+      <a routerLink="/contactus" (click)="w3_close()" class="w3-bar-item w3-hover-white w3-card btn btn-default border border-dark" style="color: white;">ContactUs</a><hr>
+      <i id="icon" class="fa fa-home"></i>    
+      <a routerLink="/animation" (click)="w3_close()" class="w3-bar-item  w3-hover-white w3-card btn btn-default border border-dark" style="color: white;">Animation</a><hr>
+     
+    </nav>
+    <header class="w3-container-fluid w3-top w3-hide-large sticky-top w3-red w3-large w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" (click)="w3_open()">☰</a>
+      <span  id="logo" class="w3-card w3-xlarge w3-center w3-round ">𝓟𝓪𝓻𝓽𝓱 𝓟𝓪𝓹𝓪𝓭 </span>
+      
+    </header> 
+    
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" (click)="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+     <div class="w3-center"> 
+    <div style=" margin-top:8%;">
+      
+      <router-outlet></router-outlet>
+    </div></div>
+    <!-- W3.CSS Container -->
+    <footer><div class="w3-red w3-container-fluid w3-padding-32" style="margin-top:500px;padding-right:58px"><p class="w3-right">Developed by <a href="https://www.myprofile007.tk" title="suyog profile" target="_blank" class="w3-hover-opacity">Suyog Mahajan</a></p></div></footer>
+    
+    
+    <br><br>
+    <!--- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+       Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column 
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+    
+       Name Column 
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+    
+       Weight Column 
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Weight </th>
+        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+      </ng-container>
+    
+       Symbol Column 
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table> -->
+    
+    
